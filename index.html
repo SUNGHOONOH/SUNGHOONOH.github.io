@@ -117,8 +117,8 @@
             <div class="project-meta"><span>05</span><small>INDUSTRIAL DATA</small></div>
             <div class="project-body">
               <h3>제조업 에너지 사용 패턴 분석 <a class="repo-link" href="https://github.com/SUNGHOONOH/manufacturing-energy-pattern-analysis" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
-              <p>설비별 전력 사용 데이터에서 시간대별 운영 패턴과 전력품질 신호를 확인하고, 추가 점검이 필요한 후보 구간을 탐색했습니다.</p>
-              <div class="project-tags">PYTHON · PANDAS · TIME SERIES · CLUSTERING</div>
+              <p>RTU 15분 설비 패널을 기준으로 전처리 검증, 시간 gap·물리 오류 진단, 부하·전력품질 후보 탐색, 설비별 특징량과 군집화까지 진행했습니다. 실제 분석 노트북과 재실행 가능한 Python 파이프라인을 공개본으로 정리했습니다.</p>
+              <div class="project-tags">PYTHON · PANDAS · TIME SERIES · CLUSTERING · NOTEBOOK</div>
             </div>
           </article>
         </div>
@@ -141,6 +141,15 @@
               <div><dt>Task</dt><dd>로컬에 먼저 안전하게 저장하면서도 LLM과 벡터 검색을 활용해 관련 기록을 찾고, 실제로 사용할 수 있는 웹·데스크톱 서비스로 연결하는 것을 목표로 했습니다.</dd></div>
               <div><dt>Action</dt><dd>React·Electron과 SQLite를 기반으로 local-first 흐름을 만들고, Hugging Face 임베딩과 Supabase PostgreSQL/pgvector 검색을 FastAPI 백엔드에 연결했습니다. 요약·일정 추출·관련 메모 검색 기능을 웹과 앱 구조에 맞춰 나누고, 공개 웹사이트와 배포 가능한 운영 구조까지 구성했습니다.</dd></div>
               <div><dt>Result</dt><dd>메모를 작성하고 저장하는 데서 끝나지 않고, 임베딩 검색과 LLM 기능이 실제 제품 흐름 안에서 동작하도록 구현했습니다. 웹사이트는 <a href="https://subnota.com" target="_blank" rel="noreferrer">subnota.com</a>에서 확인할 수 있고, 전체 구조와 코드는 GitHub에 정리했습니다.</dd></div>
+            </dl>
+          </article>
+          <article class="story">
+            <h3>03 · 제조공장 에너지 데이터 분석</h3>
+            <dl class="star-grid">
+              <div><dt>Situation</dt><dd>설비별 전력 계측 데이터가 15분 패널 형태로 제공되었고, 값의 품질과 설비별 운영 패턴을 먼저 확인해야 했습니다.</dd></div>
+              <div><dt>Task</dt><dd>원자료 집계와 제공 특징량을 비교하고, 데이터 오류와 실제 운영상 점검 후보를 구분한 뒤 공장·설비 단위의 분석 구조를 만드는 일을 진행했습니다.</dd></div>
+              <div><dt>Action</dt><dd>시간축·중복·gap·물리 범위를 검증하고, IQR과 Isolation Forest를 후보 플래그로 남겼습니다. 이후 1시간 집계, 피크·ramp, 역률·전류 불균형·전압 일탈, 설비별 패턴 특징량과 K-Means/PCA까지 연결했습니다.</dd></div>
+              <div><dt>Result</dt><dd>고부하와 전력품질 신호가 함께 나타나는 추가 점검 후보를 좁히는 분석 흐름을 만들었습니다. 원본 데이터는 공개하지 않고, 실제 분석 노트북·논리 지도·재실행 가능한 코드만 GitHub에 정리했습니다.</dd></div>
             </dl>
           </article>
         </div>
