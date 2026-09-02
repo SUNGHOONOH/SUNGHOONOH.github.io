@@ -59,8 +59,9 @@ h2 { margin-bottom: 40px; font-size: clamp(30px, 4.4vw, 52px); font-weight: 500;
 .closing { padding-bottom: 120px; }
 .closing h2 { margin-bottom: 24px; }
 .closing-copy { color: var(--muted); }
-.contact-link { display: flex; justify-content: space-between; align-items: center; max-width: 700px; margin-top: 45px; padding: 16px 0; border-bottom: 2px solid var(--ink); color: var(--blue); font-size: 14px; }
-.contact-link span { color: var(--orange); font: 500 20px "IBM Plex Mono", monospace; }
+.contact-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 54px; min-width: 285px; margin-top: 45px; padding: 14px 17px; border: 1px solid var(--blue); background: var(--blue); color: #fff; font-size: 14px; transition: background .2s ease, border-color .2s ease; }
+.contact-link:hover { border-color: #23445a; background: #23445a; color: #fff; }
+.contact-link span { color: #e7b296; font: 500 20px "IBM Plex Mono", monospace; }
 .footer { display: flex; justify-content: space-between; width: min(calc(100% - 48px), var(--max)); margin: 0 auto; padding: 25px 0 38px; color: var(--muted); font: 10px "IBM Plex Mono", monospace; letter-spacing: .04em; }
 
 @media (max-width: 760px) {
