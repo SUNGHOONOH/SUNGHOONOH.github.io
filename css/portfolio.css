@@ -1,11 +1,11 @@
 :root {
-  --ink: #151515;
-  --muted: #6e6b64;
-  --paper: #f3f0e9;
-  --line: rgba(21, 21, 21, .14);
-  --orange: #ff6847;
-  --blue: #4156d9;
-  --dark: #1b1e2b;
+  --ink: #1f2937;
+  --muted: #667085;
+  --paper: #f7f8fa;
+  --line: #e4e7ec;
+  --orange: #5066b8;
+  --blue: #667085;
+  --dark: #344054;
 }
 
 * { box-sizing: border-box; }
@@ -18,23 +18,23 @@ a { color: inherit; text-decoration: none; }
 .brand span { display: inline-grid; place-items: center; width: 22px; height: 22px; margin-right: 8px; color: var(--paper); background: var(--ink); border-radius: 50%; font: 700 12px/1 "Manrope", sans-serif; }
 nav { display: flex; gap: 28px; font: 500 12px "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
 nav a { opacity: .65; transition: opacity .2s ease; } nav a:hover { opacity: 1; }
-.hero { min-height: 680px; padding: 150px 0 70px; position: relative; }
+.hero { min-height: 610px; padding: 125px 0 70px; position: relative; }
 .eyebrow, .section-label, .project-type, .role { font: 500 11px "DM Mono", monospace; letter-spacing: .12em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--blue); }
 .eyebrow i { width: 7px; height: 7px; display: inline-block; background: var(--orange); border-radius: 50%; }
 h1, h2, h3, p { margin-top: 0; }
-h1 { max-width: 900px; margin: 25px 0; font-size: clamp(42px, 7vw, 84px); line-height: 1.07; letter-spacing: -.07em; font-weight: 800; }
+h1 { max-width: 900px; margin: 25px 0; font-size: clamp(40px, 6vw, 70px); line-height: 1.12; letter-spacing: -.06em; font-weight: 700; }
 em { color: var(--orange); font-style: normal; }
 .hero-copy { max-width: 510px; color: var(--muted); font-size: 16px; line-height: 1.8; }
 .hero-actions { display: flex; gap: 12px; margin-top: 38px; }
-.button { display: inline-flex; gap: 22px; align-items: center; padding: 15px 19px; border: 1px solid var(--ink); font: 500 12px "DM Mono", monospace; transition: transform .2s ease, background .2s ease; }
-.button:hover { transform: translateY(-3px); }.button-primary { color: #fff; background: var(--ink); }.button-ghost:hover { background: #fff; }
+.button { display: inline-flex; gap: 22px; align-items: center; padding: 15px 19px; border: 1px solid var(--ink); font: 500 12px "DM Mono", monospace; transition: transform .2s ease, background .2s ease; border-radius: 4px; }
+.button:hover { transform: translateY(-2px); }.button-primary { color: #fff; background: var(--ink); }.button-ghost:hover { background: #fff; }
 .hero-note { position: absolute; right: 0; bottom: 65px; color: var(--muted); font: 11px "DM Mono", monospace; }.hero-note span { color: var(--orange); margin-right: 8px; }
 .intro, .work, .toolkit, .contact { border-top: 1px solid var(--line); padding: 92px 0; }
 .section-label { color: var(--blue); }.intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 55px; }.intro h2, .contact h2 { font-size: clamp(34px, 5vw, 58px); line-height: 1.1; letter-spacing: -.06em; }.intro-grid p { max-width: 520px; color: var(--muted); line-height: 1.9; }.principles { display: flex; gap: 24px; padding-top: 25px; margin-top: 30px; border-top: 1px solid var(--line); font: 11px "DM Mono", monospace; }.principles span { color: var(--orange); }.principles b { display: block; margin-top: 8px; color: var(--ink); font: 600 12px "Noto Sans KR", sans-serif; }
 .section-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 45px; }.section-head p { margin: 0; color: var(--muted); font-size: 13px; }
-.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }.project-card { min-height: 355px; display: flex; flex-direction: column; padding: 30px; background: #fff; border: 1px solid var(--line); transition: transform .25s ease, box-shadow .25s ease; }.project-card:hover { transform: translateY(-5px); box-shadow: 10px 12px 0 rgba(21, 21, 21, .08); }.project-card.featured { background: var(--orange); color: #fff; border-color: var(--orange); }.dark-card { color: #fff; background: var(--dark); border-color: var(--dark); }.award-card { background: #e3e8ff; border-color: #cbd3ff; }.energy-card { background: #e6e4dc; }
-.project-top, .card-bottom { display: flex; justify-content: space-between; align-items: center; }.project-number { font: 500 14px "DM Mono", monospace; }.project-type { opacity: .65; }.project-card h3 { margin: 62px 0 15px; font-size: clamp(26px, 3vw, 38px); line-height: 1.08; letter-spacing: -.06em; }.project-card p { max-width: 440px; margin-bottom: 24px; color: inherit; opacity: .75; font-size: 14px; line-height: 1.75; }.role { margin-top: auto; opacity: .6; font-size: 10px; }.card-bottom { padding-top: 22px; margin-top: 22px; border-top: 1px solid rgba(21, 21, 21, .18); font: 500 11px "DM Mono", monospace; }.dark-card .card-bottom { border-color: rgba(255,255,255,.2); }.featured .card-bottom { border-color: rgba(255,255,255,.35); }.accent-mark { font-size: 19px; }.card-bottom a { opacity: .75; }.card-bottom a:hover { opacity: 1; }.award-badge { display: inline-block; width: fit-content; padding: 7px 10px; margin-top: 58px; color: #fff; background: var(--blue); font: 500 10px "DM Mono", monospace; }.award-card h3 { margin-top: 18px; }.wide-card { grid-column: 1 / -1; min-height: 270px; }.wide-content { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; margin-top: 52px; }.wide-card h3 { margin: 0; }.wide-card p { margin-top: 5px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }.project-card { min-height: 355px; display: flex; flex-direction: column; padding: 30px; background: #fff; border: 1px solid var(--line); border-radius: 10px; transition: transform .25s ease, box-shadow .25s ease; }.project-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(16, 24, 40, .08); }.project-card.featured { background: #fff; color: var(--ink); border-top: 3px solid var(--orange); }.dark-card { color: var(--ink); background: #fff; border-color: var(--line); }.award-card { background: #eef2ff; border-color: #d9e0ff; }.energy-card { background: #f0f1ed; }
+.project-top, .card-bottom { display: flex; justify-content: space-between; align-items: center; }.project-number { font: 500 14px "DM Mono", monospace; }.project-type { opacity: .65; }.project-card h3 { margin: 62px 0 15px; font-size: clamp(26px, 3vw, 38px); line-height: 1.08; letter-spacing: -.06em; }.project-card p { max-width: 440px; margin-bottom: 24px; color: inherit; opacity: .75; font-size: 14px; line-height: 1.75; }.role { margin-top: auto; opacity: .6; font-size: 10px; }.card-bottom { padding-top: 22px; margin-top: 22px; border-top: 1px solid var(--line); font: 500 11px "DM Mono", monospace; }.dark-card .card-bottom, .featured .card-bottom { border-color: var(--line); }.accent-mark { font-size: 19px; }.card-bottom a { opacity: .75; }.card-bottom a:hover { opacity: 1; }.award-badge { display: inline-block; width: fit-content; padding: 7px 10px; margin-top: 58px; color: #fff; background: var(--orange); font: 500 10px "DM Mono", monospace; }.award-card h3 { margin-top: 18px; }.wide-card { grid-column: 1 / -1; min-height: 270px; }.wide-content { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; margin-top: 52px; }.wide-card h3 { margin: 0; }.wide-card p { margin-top: 5px; }
 .toolkit-list { margin-top: 50px; border-top: 1px solid var(--line); }.toolkit-list > div { display: grid; grid-template-columns: 80px 1fr 1fr; align-items: center; padding: 25px 0; border-bottom: 1px solid var(--line); }.toolkit-list span { color: var(--orange); font: 11px "DM Mono", monospace; }.toolkit-list strong { font-size: 21px; letter-spacing: -.04em; }.toolkit-list p { margin: 0; color: var(--muted); font: 12px "DM Mono", monospace; }
 .contact { padding-bottom: 130px; }.contact h2 { margin: 60px 0 45px; }.contact-link { display: flex; justify-content: space-between; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font: 500 15px "DM Mono", monospace; }.contact-link span { color: var(--orange); font-size: 24px; }
 .footer { display: flex; justify-content: space-between; padding: 24px 0 36px; color: var(--muted); font: 10px "DM Mono", monospace; letter-spacing: .05em; }
