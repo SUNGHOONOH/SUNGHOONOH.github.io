@@ -48,14 +48,42 @@ h2 { margin-bottom: 40px; font-size: clamp(30px, 4.4vw, 52px); font-weight: 500;
 .project-meta small { max-width: 90px; text-align: right; font-size: 9px; line-height: 1.4; }
 .project-body h3 { margin-bottom: 9px; font-size: 23px; font-weight: 600; letter-spacing: -.045em; }
 .project-body h3 a { margin-left: 6px; color: var(--blue); font: 500 17px "IBM Plex Mono", monospace; }
+.repo-link { display: inline-flex; align-items: center; margin-left: 10px !important; padding: 3px 8px; border: 1px solid #b7c7d0; background: #fff; color: var(--blue) !important; font: 500 10px "IBM Plex Mono", monospace !important; letter-spacing: .02em; vertical-align: middle; transition: border-color .2s ease, background .2s ease; }
+.repo-link:hover { border-color: var(--blue); background: var(--blue-soft); }
 .project-body p { max-width: 680px; margin-bottom: 15px; color: #59636a; font-size: 14px; line-height: 1.75; }
 .project-tags { color: var(--muted); font-size: 10px; }
 .award-label { display: inline-block; margin-bottom: 9px; padding: 5px 8px; color: var(--blue); background: var(--blue-soft); font-size: 10px; }
 .project-award { background: var(--blue-soft); }
+.artifact-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 48px; }
+.artifact-card { margin: 0; border: 1px solid var(--line); background: #fff; }
+.artifact-media { height: 180px; display: grid; place-items: center; overflow: hidden; }
+.artifact-media img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.product-media { background: #eef2ff; }
+.product-media img, .aha-media img { width: 120px; height: 120px; }
+.aha-media { background: #f0f1ed; }
+.prompton-media { background: #1d2329; color: #fff; }
+.artifact-metrics { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 5px 13px; width: 58%; }
+.artifact-metrics b { color: #e7b296; font: 500 25px "IBM Plex Mono", monospace; letter-spacing: -.06em; }
+.artifact-metrics span { color: #c6d0d5; font: 10px "IBM Plex Mono", monospace; }
+.chart-media { padding: 16px; background: #fff; }
+.artifact-card figcaption { display: flex; justify-content: space-between; gap: 15px; padding: 13px 15px; border-top: 1px solid var(--line); }
+.artifact-card figcaption strong { font-size: 13px; font-weight: 600; }
+.artifact-card figcaption span { color: var(--muted); font-size: 11px; }
 .skills-list { border-top: 2px solid var(--ink); }
 .skills-list > div { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .skills-list h3 { margin: 0; font-size: 17px; font-weight: 600; }
 .skills-list p { margin: 0; color: var(--muted); font-size: 13px; }
+.star-stories { margin-top: 68px; border-top: 2px solid var(--ink); }
+.story-heading { display: flex; justify-content: space-between; gap: 35px; padding: 20px 0 6px; }
+.story-heading .section-kicker { margin: 0; }
+.story-heading > p:last-child { max-width: 360px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.story { padding: 27px 0 33px; border-bottom: 1px solid var(--line); }
+.story h3 { margin-bottom: 22px; font-size: 16px; font-weight: 600; }
+.star-grid { margin: 0; }
+.star-grid > div { display: grid; grid-template-columns: 100px 1fr; gap: 25px; padding: 12px 0; border-top: 1px solid var(--line); }
+.star-grid dt { color: var(--orange); font: 500 10px "IBM Plex Mono", monospace; letter-spacing: .04em; }
+.star-grid dd { max-width: 680px; margin: 0; color: #59636a; font-size: 13px; line-height: 1.75; }
+.star-grid dd a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 .closing { padding-bottom: 120px; }
 .closing h2 { margin-bottom: 24px; }
 .closing-copy { color: var(--muted); }
@@ -78,11 +106,19 @@ h2 { margin-bottom: 40px; font-size: clamp(30px, 4.4vw, 52px); font-weight: 500;
   h2 { margin-bottom: 30px; }
   .section-title-row { display: block; }
   .section-note { margin-top: 21px; }
+  .artifact-gallery { grid-template-columns: 1fr; margin-top: 38px; }
+  .artifact-media { height: 155px; }
+  .artifact-card figcaption { display: block; }
+  .artifact-card figcaption span { display: block; margin-top: 3px; }
   .project-list { margin-top: 38px; }
   .project-row { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 27px; }
   .project-meta { justify-content: flex-start; gap: 14px; }
   .project-meta small { text-align: left; }
   .project-body h3 { font-size: 20px; }
+  .repo-link { margin-left: 0 !important; margin-top: 8px; }
+  .story-heading { display: block; }
+  .story-heading > p:last-child { margin-top: 10px; }
+  .star-grid > div { grid-template-columns: 1fr; gap: 4px; }
   .skills-list > div { display: block; }
   .skills-list p { margin-top: 7px; }
   .footer { width: min(calc(100% - 40px), var(--max)); font-size: 9px; }

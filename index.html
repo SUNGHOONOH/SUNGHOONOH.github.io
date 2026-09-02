@@ -56,11 +56,30 @@
           <p class="section-note">원본 데이터는 공개하지 않고, 코드와 처리 흐름을 정리했습니다.</p>
         </div>
 
+        <div class="artifact-gallery" aria-label="프로젝트 작업물 미리보기">
+          <figure class="artifact-card">
+            <div class="artifact-media product-media"><img src="https://raw.githubusercontent.com/SUNGHOONOH/Subnota/main/web/public/subnota-mark-glass.png" alt="Subnota 제품 마크" loading="lazy"></div>
+            <figcaption><strong>Subnota</strong><span>제품 구현 · 공개 서비스</span></figcaption>
+          </figure>
+          <figure class="artifact-card">
+            <div class="artifact-media aha-media"><img src="https://raw.githubusercontent.com/SUNGHOONOH/aha-ai-math-tutor/main/app/icon.png" alt="AHA Tutor 아이콘" loading="lazy"></div>
+            <figcaption><strong>AHA Tutor</strong><span>OCR · RAG · 소크라틱 튜터링</span></figcaption>
+          </figure>
+          <figure class="artifact-card">
+            <div class="artifact-media prompton-media"><div class="artifact-metrics"><b>169</b><span>lecture texts</span><b>3 × 110</b><span>structured sections</span></div></div>
+            <figcaption><strong>Prompton</strong><span>전처리 · 구조화 · 검색 챗봇</span></figcaption>
+          </figure>
+          <figure class="artifact-card chart-card">
+            <div class="artifact-media chart-media"><img src="https://raw.githubusercontent.com/SUNGHOONOH/cheonan-ems-route-optimization/main/results/figures/cheonan-ems-proposed-operation.png" alt="천안시 119 복귀 경로 분석 결과 도표" loading="lazy"></div>
+            <figcaption><strong>천안시 119</strong><span>시공간 분석 · 경로 시뮬레이션</span></figcaption>
+          </figure>
+        </div>
+
         <div class="project-list">
           <article class="project-row">
             <div class="project-meta"><span>01</span><small>PRODUCT</small></div>
             <div class="project-body">
-              <h3>Subnota <a href="https://github.com/SUNGHOONOH/Subnota" target="_blank" rel="noreferrer" aria-label="Subnota GitHub 저장소">↗</a></h3>
+              <h3>Subnota <a class="repo-link" href="https://github.com/SUNGHOONOH/Subnota" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p>메모, 일정, 저장한 링크를 한 작업공간에서 관리하는 local-first 데스크톱 노트 앱입니다.</p>
               <div class="project-tags">TYPESCRIPT · REACT · ELECTRON · SQLITE</div>
             </div>
@@ -69,7 +88,7 @@
           <article class="project-row">
             <div class="project-meta"><span>02</span><small>AI SERVICE</small></div>
             <div class="project-body">
-              <h3>AHA Tutor <a href="https://github.com/SUNGHOONOH/aha-ai-math-tutor" target="_blank" rel="noreferrer" aria-label="AHA Tutor GitHub 저장소">↗</a></h3>
+              <h3>AHA Tutor <a class="repo-link" href="https://github.com/SUNGHOONOH/aha-ai-math-tutor" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p>정답을 바로 보여주기보다 질문으로 풀이를 이끌어가는 소크라틱 AI 수학 튜터입니다. 문제 인식, 개념 검색, 대화형 튜터링 흐름을 구현했습니다.</p>
               <div class="project-tags">NEXT.JS · TYPESCRIPT · OCR · RAG · SUPABASE</div>
             </div>
@@ -79,7 +98,7 @@
             <div class="project-meta"><span>03</span><small>AWARD</small></div>
             <div class="project-body">
               <div class="award-label">WANTED PROMPTON 수상</div>
-              <h3>강의 탐색 챗봇 <a href="https://github.com/SUNGHOONOH/wanted-prompton-course-chatbot" target="_blank" rel="noreferrer" aria-label="Wanted Prompton GitHub 저장소">↗</a></h3>
+              <h3>강의 탐색 챗봇 <a class="repo-link" href="https://github.com/SUNGHOONOH/wanted-prompton-course-chatbot" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p>강의계획서 텍스트를 전처리·구조화하고, LAAS 기반 검색 결과와 후속 질문 기능으로 연결한 생성형 AI 챗봇입니다.</p>
               <div class="project-tags">DATA PREPROCESSING · FLASK · LAAS · PROMPTING</div>
             </div>
@@ -88,7 +107,7 @@
           <article class="project-row">
             <div class="project-meta"><span>04</span><small>DATA ANALYSIS</small></div>
             <div class="project-body">
-              <h3>천안시 119 복귀 경로 최적화 <a href="https://github.com/SUNGHOONOH/cheonan-ems-route-optimization" target="_blank" rel="noreferrer" aria-label="천안시 119 GitHub 저장소">↗</a></h3>
+              <h3>천안시 119 복귀 경로 최적화 <a class="repo-link" href="https://github.com/SUNGHOONOH/cheonan-ems-route-optimization" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p>천안시 119 구급차 데이터를 전처리하고 시각화와 모델링을 통해 복귀 경로 개선 가능성을 분석했습니다. 전처리·시각화·모델링을 담당했습니다.</p>
               <div class="project-tags">PYTHON · PANDAS · GEOPANDAS · SIMULATION</div>
             </div>
@@ -97,10 +116,32 @@
           <article class="project-row">
             <div class="project-meta"><span>05</span><small>INDUSTRIAL DATA</small></div>
             <div class="project-body">
-              <h3>제조업 에너지 사용 패턴 분석 <a href="https://github.com/SUNGHOONOH/manufacturing-energy-pattern-analysis" target="_blank" rel="noreferrer" aria-label="제조업 에너지 분석 GitHub 저장소">↗</a></h3>
+              <h3>제조업 에너지 사용 패턴 분석 <a class="repo-link" href="https://github.com/SUNGHOONOH/manufacturing-energy-pattern-analysis" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p>설비별 전력 사용 데이터에서 시간대별 운영 패턴과 전력품질 신호를 확인하고, 추가 점검이 필요한 후보 구간을 탐색했습니다.</p>
               <div class="project-tags">PYTHON · PANDAS · TIME SERIES · CLUSTERING</div>
             </div>
+          </article>
+        </div>
+
+        <div class="star-stories">
+          <div class="story-heading"><p class="section-kicker">STAR로 정리한 대표 경험</p><p>지원 직무와 가장 가까운 작업을 상황·과제·행동·결과 순서로 정리했습니다.</p></div>
+          <article class="story">
+            <h3>01 · 천안시 119 복귀 경로 최적화</h3>
+            <dl class="star-grid">
+              <div><dt>Situation</dt><dd>119 구급차가 병원이나 현장에서 센터로 복귀할 때, 다음 신고 수요를 함께 고려할 수 있는지 분석하는 공모전 프로젝트였습니다.</dd></div>
+              <div><dt>Task</dt><dd>신고접수·구급활동·센터·병원·도로망 데이터를 연결하고, 시공간 수요와 복귀 경로를 분석할 수 있는 데이터와 도표를 만드는 일을 맡았습니다.</dd></div>
+              <div><dt>Action</dt><dd>시간과 공간 기준을 맞춰 데이터를 전처리하고, 도농·시간대별 패턴을 시각화했습니다. 이후 수요예측과 병원 후보, 복귀 경로를 시간 순서대로 비교하는 모델링과 시뮬레이션을 진행했습니다.</dd></div>
+              <div><dt>Result</dt><dd>팀이 제안한 분석 구조와 작동 방식을 발표 자료로 설명할 수 있도록 정리했습니다. 최종 공모전 결과 발표 전이므로 확정 성과 수치는 공개하지 않고, 담당 작업과 분석 구조 중심으로 공개하고 있습니다.</dd></div>
+            </dl>
+          </article>
+          <article class="story">
+            <h3>02 · Subnota 검색·AI 서비스 구현</h3>
+            <dl class="star-grid">
+              <div><dt>Situation</dt><dd>메모와 저장한 링크가 쌓여도 시간이 지나면 필요한 내용을 다시 찾기 어려웠고, 단순한 키워드 검색만으로는 기록의 맥락을 연결하기 어려웠습니다.</dd></div>
+              <div><dt>Task</dt><dd>로컬에 먼저 안전하게 저장하면서도 LLM과 벡터 검색을 활용해 관련 기록을 찾고, 실제로 사용할 수 있는 웹·데스크톱 서비스로 연결하는 것을 목표로 했습니다.</dd></div>
+              <div><dt>Action</dt><dd>React·Electron과 SQLite를 기반으로 local-first 흐름을 만들고, Hugging Face 임베딩과 Supabase PostgreSQL/pgvector 검색을 FastAPI 백엔드에 연결했습니다. 요약·일정 추출·관련 메모 검색 기능을 웹과 앱 구조에 맞춰 나누고, 공개 웹사이트와 배포 가능한 운영 구조까지 구성했습니다.</dd></div>
+              <div><dt>Result</dt><dd>메모를 작성하고 저장하는 데서 끝나지 않고, 임베딩 검색과 LLM 기능이 실제 제품 흐름 안에서 동작하도록 구현했습니다. 웹사이트는 <a href="https://subnota.com" target="_blank" rel="noreferrer">subnota.com</a>에서 확인할 수 있고, 전체 구조와 코드는 GitHub에 정리했습니다.</dd></div>
+            </dl>
           </article>
         </div>
       </div>
