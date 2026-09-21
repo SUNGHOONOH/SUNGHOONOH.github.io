@@ -61,6 +61,12 @@ h2 { margin-bottom: 36px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; l
 .project-focus div { min-width: 0; }
 .project-focus strong { display: block; margin-bottom: 3px; color: var(--ink); font-size: 11px; font-weight: 600; }
 .project-focus span { display: block; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.school-list { border-top: 1px solid var(--ink); }
+.school-project { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.school-project h3 { margin: 0 0 5px; font-size: 17px; font-weight: 600; }
+.school-project p { margin: 0; color: var(--muted); font-size: 13px; }
+.school-project .school-summary { margin-bottom: 10px; color: #59636a; }
+.school-tools strong { margin-right: 12px; color: var(--blue); font-size: 11px; font-weight: 600; }
 .skills-list { border-top: 1px solid var(--ink); }
 .skills-list > div { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .skills-list h3 { margin: 0; font-size: 17px; font-weight: 600; }
@@ -108,6 +114,7 @@ h2 { margin-bottom: 36px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; l
   .story-heading { display: block; }
   .story-heading > p:last-child { margin-top: 10px; }
   .star-grid > div { grid-template-columns: 1fr; gap: 4px; }
+  .school-project { grid-template-columns: 1fr; gap: 12px; }
   .skills-list > div { display: block; }
   .skills-list p { margin-top: 7px; }
   .footer { width: min(calc(100% - 40px), var(--max)); font-size: 9px; }
