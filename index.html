@@ -80,8 +80,8 @@
             <div class="project-meta"><span>01</span><small>PRODUCT</small></div>
             <div class="project-body">
               <h3>Subnota <a class="repo-link" href="https://github.com/SUNGHOONOH/Subnota" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
-              <p>메모, 일정, 저장한 링크를 한 작업공간에서 관리하는 local-first 데스크톱 노트 앱입니다.</p>
-              <div class="project-tags">TYPESCRIPT · REACT · ELECTRON · SQLITE</div>
+              <p>사용자 메모 속 맥락 패턴을 바탕으로 관련 메모와 일정·저장 링크를 다시 연결해 주는 추천형 생산성 애플리케이션입니다. 문제를 직접 정의하고 검색·추천·일정 추출 흐름을 설계해 실제 웹·데스크톱 서비스로 배포했습니다.</p>
+              <div class="project-tags">PRODUCT PLANNING · SEMANTIC SEARCH · LLM · VECTOR DB · DEPLOYMENT</div>
             </div>
           </article>
 
@@ -137,10 +137,10 @@
           <article class="story">
             <h3>02 · Subnota 검색·AI 서비스 구현</h3>
             <dl class="star-grid">
-              <div><dt>Situation</dt><dd>메모와 저장한 링크가 쌓여도 시간이 지나면 필요한 내용을 다시 찾기 어려웠고, 단순한 키워드 검색만으로는 기록의 맥락을 연결하기 어려웠습니다.</dd></div>
-              <div><dt>Task</dt><dd>로컬에 먼저 안전하게 저장하면서도 LLM과 벡터 검색을 활용해 관련 기록을 찾고, 실제로 사용할 수 있는 웹·데스크톱 서비스로 연결하는 것을 목표로 했습니다.</dd></div>
-              <div><dt>Action</dt><dd>React·Electron과 SQLite를 기반으로 local-first 흐름을 만들고, Hugging Face 임베딩과 Supabase PostgreSQL/pgvector 검색을 FastAPI 백엔드에 연결했습니다. 요약·일정 추출·관련 메모 검색 기능을 웹과 앱 구조에 맞춰 나누고, 공개 웹사이트와 배포 가능한 운영 구조까지 구성했습니다.</dd></div>
-              <div><dt>Result</dt><dd>메모를 작성하고 저장하는 데서 끝나지 않고, 임베딩 검색과 LLM 기능이 실제 제품 흐름 안에서 동작하도록 구현했습니다. 웹사이트는 <a href="https://subnota.com" target="_blank" rel="noreferrer">subnota.com</a>에서 확인할 수 있고, 전체 구조와 코드는 GitHub에 정리했습니다.</dd></div>
+              <div><dt>Situation</dt><dd>메모와 저장한 링크가 쌓여도 시간이 지나면 필요한 내용을 다시 찾기 어려웠고, 단순한 키워드 검색만으로는 서로 다른 시점에 기록한 맥락을 연결하기 어려웠습니다. 일정이나 할 일을 메모 안에 적어도 사용자가 직접 다시 옮겨야 하는 부담이 있었습니다.</dd></div>
+              <div><dt>Task</dt><dd>사용자가 메모를 작성하는 흐름을 방해하지 않으면서 관련 기록과 일정 후보를 다시 발견할 수 있는 애플리케이션을 만들고자 했습니다. 동시에 개인적인 기록을 다루는 서비스인 만큼 빠른 기능 구현보다 로컬 우선 저장과 데이터 보호를 먼저 고려했습니다.</dd></div>
+              <div><dt>Action</dt><dd>React·Electron과 SQLite를 기반으로 메모를 기기에 먼저 저장하고, 작성 중 관련 맥락을 찾는 검색은 로컬 임베딩으로 처리했습니다. 이후 Supabase 동기화·PostgreSQL/pgvector·FastAPI를 연결해 저장 링크 요약, 메모 속 일정 후보 추출, Topics 기반 관련 기록 연결을 구현했습니다. 모든 요청을 실시간으로 서버에 보내기보다 검색은 즉시, 일정·토픽 보강은 백그라운드 배치로 나누어 사용성과 운영 비용 사이의 균형을 잡았습니다.</dd></div>
+              <div><dt>Result</dt><dd>메모를 저장하는 데서 끝나지 않고, 사용자의 기록 속 맥락 패턴을 바탕으로 관련 메모·일정·링크를 다시 연결하는 제품 흐름을 완성했습니다. 웹사이트와 macOS·Windows 데스크톱 배포본을 실제로 운영하고 있으며, 서비스는 <a href="https://subnota.com" target="_blank" rel="noreferrer">subnota.com</a>에서 확인할 수 있습니다. 전체 구조와 개발 과정은 GitHub에 정리했습니다.</dd></div>
             </dl>
           </article>
           <article class="story">
