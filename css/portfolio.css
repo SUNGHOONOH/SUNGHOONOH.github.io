@@ -55,6 +55,7 @@ h2 { margin-bottom: 36px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; l
 .repo-link:hover { transform: translateY(-1px); }
 .project-body p { max-width: 700px; margin-bottom: 15px; color: #59636a; font-size: 14px; line-height: 1.78; }
 .project-tags { color: var(--muted); font-size: 10px; }
+.project-tags strong { margin-right: 12px; color: var(--blue); font-size: 11px; font-weight: 600; letter-spacing: normal; }
 .award-label { display: inline-block; margin-bottom: 9px; padding: 5px 8px; color: var(--blue); background: var(--blue-soft); font-size: 10px; }
 .project-award { background: transparent; }
 .project-focus { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 21px 0 17px; padding-top: 15px; border-top: 1px solid var(--line); }
