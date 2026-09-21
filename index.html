@@ -54,29 +54,6 @@
           <p class="section-note">결과만 나열하지 않고 문제를 정의한 과정과 해결 방식을 중심으로 정리했습니다. 원본 데이터는 공개하지 않았습니다.</p>
         </div>
 
-        <div class="artifact-gallery" aria-label="프로젝트 작업물 미리보기">
-          <figure class="artifact-card">
-            <div class="artifact-media product-media"><img src="https://raw.githubusercontent.com/SUNGHOONOH/Subnota/main/web/public/subnota-mark-glass.png" alt="Subnota 제품 마크" loading="lazy"></div>
-            <figcaption><strong>Subnota</strong><span>제품 구현 · 공개 서비스</span></figcaption>
-          </figure>
-          <figure class="artifact-card">
-            <div class="artifact-media manufacturing-media"><div class="artifact-metrics"><b>15 min</b><span>panel granularity</span><b>IQR · IF</b><span>quality flags</span></div></div>
-            <figcaption><strong>제조공장 에너지</strong><span>시계열 · 전력품질 · 클러스터링</span></figcaption>
-          </figure>
-          <figure class="artifact-card">
-            <div class="artifact-media prompton-media"><div class="artifact-metrics"><b>169</b><span>lecture texts</span><b>3 × 110</b><span>structured sections</span></div></div>
-            <figcaption><strong>Prompton</strong><span>전처리 · 구조화 · 검색 챗봇</span></figcaption>
-          </figure>
-          <figure class="artifact-card">
-            <div class="artifact-media itda-media"><div class="artifact-metrics"><b>93.5%</b><span>fixed validation</span><b>OCR</b><span>expiry date</span></div></div>
-            <figcaption><strong>ITDA</strong><span>OCR · 오류 분석 · 검증셋</span></figcaption>
-          </figure>
-          <figure class="artifact-card chart-card">
-            <div class="artifact-media chart-media"><img src="https://raw.githubusercontent.com/SUNGHOONOH/cheonan-ems-route-optimization/main/results/figures/cheonan-ems-proposed-operation.png" alt="천안시 119 복귀 경로 분석 결과 도표" loading="lazy"></div>
-            <figcaption><strong>천안시 119</strong><span>시공간 분석 · 경로 시뮬레이션</span></figcaption>
-          </figure>
-        </div>
-
         <div class="project-list">
           <article class="project-row">
             <div class="project-meta"><span>01</span><small>PRODUCT</small></div>
@@ -84,6 +61,11 @@
               <h3>Subnota <a class="repo-link" href="https://github.com/SUNGHOONOH/Subnota" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p class="project-submeta">2026.06~현재 · 개인 개발 · 기획·설계·개발·분석·배포</p>
               <p>사용자 메모 속 맥락 패턴을 바탕으로 관련 메모와 일정·저장 링크를 다시 연결해 주는 추천형 생산성 애플리케이션입니다. 문제를 직접 정의하고 검색·추천·일정 추출 흐름을 설계해 실제 웹·데스크톱 서비스로 배포했으며, 소수 실사용 로그를 근거로 추천 노출 대기시간을 5초에서 4초로 조정했습니다.</p>
+              <div class="project-focus" aria-label="Subnota에서 추가로 고민한 문제">
+                <div><strong>추천 대상</strong><span>유사한 기록과 함께 볼 가치가 있는 기록을 분리</span></div>
+                <div><strong>노출 타이밍</strong><span>작성 흐름을 끊지 않는 대기 조건과 최신 요청 반영</span></div>
+                <div><strong>운영 구조</strong><span>로컬 저장·즉시 검색·백그라운드 보강을 분리</span></div>
+              </div>
               <div class="project-tags">PRODUCT PLANNING · SEMANTIC SEARCH · LLM · VECTOR DB · DEPLOYMENT</div>
             </div>
           </article>
@@ -94,6 +76,11 @@
               <h3>제조업 에너지 사용 패턴 분석 <a class="repo-link" href="https://github.com/SUNGHOONOH/manufacturing-energy-pattern-analysis" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p class="project-submeta">2026.07~2026.08 · 팀 프로젝트 · 전처리·시각화·EDA·클러스터링·모델링 공동 수행</p>
               <p>RTU 15분 설비 패널을 기준으로 전처리 검증, 시간 gap·물리 오류 진단, 설비 단위 지표 설계, 부하·전력품질 후보 탐색, 군집화까지 진행했습니다. 공장 전체 평균에 가려진 문제를 설비 단위로 쪼개 점검 우선 설비를 찾고, 재실행 가능한 Python 파이프라인으로 정리했습니다.</p>
+              <div class="project-focus" aria-label="제조업 에너지 분석에서 추가로 고민한 문제">
+                <div><strong>데이터 신뢰성</strong><span>5초 원자료와 15분 특징량의 정합성 비교</span></div>
+                <div><strong>분석 단위</strong><span>공장 평균에서 설비 단위 패턴으로 전환</span></div>
+                <div><strong>해석 범위</strong><span>점검 후보와 실제 절감·인과효과를 구분</span></div>
+              </div>
               <div class="project-tags">PYTHON · PANDAS · TIME SERIES · CLUSTERING · CAUSAL DESIGN</div>
             </div>
           </article>
@@ -105,6 +92,11 @@
               <h3>강의 탐색 챗봇 <a class="repo-link" href="https://github.com/SUNGHOONOH/wanted-prompton-course-chatbot" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p class="project-submeta">2025.01 · 팀 프로젝트 · 강의계획서 전처리·구조화 · 데이터 전처리상</p>
               <p>형식이 제각각인 강의계획서 텍스트 산출물 169건을 필드별로 정리해 검색·비교 가능한 JSON 데이터로 재구성하고, 관심 분야별 강의 비교·후속 질문 챗봇 시제품에 연결했습니다.</p>
+              <div class="project-focus" aria-label="Prompton에서 추가로 고민한 문제">
+                <div><strong>텍스트 편차</strong><span>169개 강의계획서의 형식 차이를 정리</span></div>
+                <div><strong>검색 구조</strong><span>필드별 JSON으로 비교·검색 단위를 통일</span></div>
+                <div><strong>시제품 연결</strong><span>관심 분야 비교와 후속 질문으로 연결</span></div>
+              </div>
               <div class="project-tags">DATA PREPROCESSING · FLASK · LAAS · PROMPTING</div>
             </div>
           </article>
@@ -116,6 +108,11 @@
               <h3>상품 소비기한 추출·검증 <a class="repo-link" href="https://github.com/SUNGHOONOH/ITDA_TerrorBum_Expiry-Date" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p class="project-submeta">2026.09~현재 · 팀 프로젝트 · 데이터 수집·라벨링·모델 실험·오류 분석·제출 환경 구성</p>
               <p>상품 사진 속 여러 숫자와 날짜 중 소비기한을 구분하는 문제를 다뤘습니다. 빛 번짐 보정 가설이 개선으로 이어지지 않자 오답을 인식·검출·선택 단계로 나눠 방향을 바꾸고, GPU가 없는 4코어 CPU 환경에 맞춰 기본 경로와 실패·저신뢰 사진용 보정 경로를 분리했습니다. 고정 검증 사진 200장에서 날짜 완전일치율 93.5%를 확인했으며, 이는 팀 내부 검증셋 결과입니다.</p>
+              <div class="project-focus" aria-label="ITDA에서 추가로 고민한 문제">
+                <div><strong>오류 원인</strong><span>인식·영역 검출·날짜 선택으로 분해</span></div>
+                <div><strong>실행 제약</strong><span>4코어 CPU에서 기본·보정 경로를 분리</span></div>
+                <div><strong>검증 설계</strong><span>상품 단위 분리로 촬영 누수를 방지</span></div>
+              </div>
               <div class="project-tags">PYTHON · PADDLEOCR · IMAGE PREPROCESSING · ERROR ANALYSIS</div>
             </div>
           </article>
@@ -126,6 +123,11 @@
               <h3>천안시 119 복귀 경로 최적화 <a class="repo-link" href="https://github.com/SUNGHOONOH/cheonan-ems-route-optimization" target="_blank" rel="noreferrer">GitHub ↗</a></h3>
               <p class="project-submeta">2026.08~2026.09 · 팀 프로젝트 · 전처리·시각화·수요·경로 모델링</p>
               <p>천안시 119 구급차 데이터를 전처리하고 시각화와 모델링을 통해 복귀 경로 개선 가능성을 분석했습니다. 격자 모델보다 경로 탐색에 맞는 연속 수요표면을 선택하고, 미이송 후 복귀 사례까지 평가에 포함하는 방향을 제안했습니다.</p>
+              <div class="project-focus" aria-label="천안시 119 분석에서 추가로 고민한 문제">
+                <div><strong>데이터 연결</strong><span>공통 식별자 없는 자료를 시간·센터 기준으로 결합</span></div>
+                <div><strong>모델 선택</strong><span>홀드아웃 점수보다 경로 조회 가능성을 우선</span></div>
+                <div><strong>정책 평가</strong><span>미이송 복귀 포함·미래 기간 홀드아웃</span></div>
+              </div>
               <div class="project-tags">PYTHON · PANDAS · GEOPANDAS · SIMULATION</div>
             </div>
           </article>

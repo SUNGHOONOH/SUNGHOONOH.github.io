@@ -57,26 +57,10 @@ h2 { margin-bottom: 36px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; l
 .project-tags { color: var(--muted); font-size: 10px; }
 .award-label { display: inline-block; margin-bottom: 9px; padding: 5px 8px; color: var(--blue); background: var(--blue-soft); font-size: 10px; }
 .project-award { background: transparent; }
-.artifact-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 46px; }
-.artifact-card { margin: 0; border: 1px solid var(--line); background: #fff; }
-.artifact-media { height: 166px; display: grid; place-items: center; overflow: hidden; }
-.artifact-media img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.product-media { background: #eef2ff; }
-.product-media img { width: 120px; height: 120px; }
-.prompton-media { background: #1d2329; color: #fff; }
-.itda-media { background: #eef0e6; color: var(--ink); }
-.itda-media .artifact-metrics b { color: #58705d; }
-.itda-media .artifact-metrics span { color: #667268; }
-.manufacturing-media { background: #24332e; color: #fff; }
-.manufacturing-media .artifact-metrics b { color: #b8d49b; }
-.manufacturing-media .artifact-metrics span { color: #d0ddd4; }
-.artifact-metrics { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 5px 13px; width: 58%; }
-.artifact-metrics b { color: #e7b296; font: 500 25px "IBM Plex Mono", monospace; letter-spacing: -.06em; }
-.artifact-metrics span { color: #c6d0d5; font: 10px "IBM Plex Mono", monospace; }
-.chart-media { padding: 16px; background: #fff; }
-.artifact-card figcaption { display: flex; justify-content: space-between; gap: 15px; padding: 12px 14px; border-top: 1px solid var(--line); }
-.artifact-card figcaption strong { font-size: 13px; font-weight: 600; }
-.artifact-card figcaption span { color: var(--muted); font-size: 11px; }
+.project-focus { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 21px 0 17px; padding-top: 15px; border-top: 1px solid var(--line); }
+.project-focus div { min-width: 0; }
+.project-focus strong { display: block; margin-bottom: 3px; color: var(--ink); font-size: 11px; font-weight: 600; }
+.project-focus span { display: block; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .skills-list { border-top: 1px solid var(--ink); }
 .skills-list > div { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .skills-list h3 { margin: 0; font-size: 17px; font-weight: 600; }
@@ -114,10 +98,7 @@ h2 { margin-bottom: 36px; font-size: clamp(30px, 4vw, 48px); font-weight: 500; l
   h2 { margin-bottom: 30px; }
   .section-title-row { display: block; }
   .section-note { margin-top: 21px; }
-  .artifact-gallery { grid-template-columns: 1fr; margin-top: 38px; }
-  .artifact-media { height: 150px; }
-  .artifact-card figcaption { display: block; }
-  .artifact-card figcaption span { display: block; margin-top: 3px; }
+  .project-focus { grid-template-columns: 1fr; gap: 11px; margin-top: 19px; }
   .project-list { margin-top: 38px; }
   .project-row { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 27px; }
   .project-meta { justify-content: flex-start; gap: 14px; }
