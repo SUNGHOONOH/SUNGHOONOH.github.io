@@ -59,9 +59,11 @@ h2 { margin-bottom: 40px; font-size: clamp(30px, 4.4vw, 52px); font-weight: 500;
 .artifact-media { height: 180px; display: grid; place-items: center; overflow: hidden; }
 .artifact-media img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .product-media { background: #eef2ff; }
-.product-media img, .aha-media img { width: 120px; height: 120px; }
-.aha-media { background: #f0f1ed; }
+.product-media img { width: 120px; height: 120px; }
 .prompton-media { background: #1d2329; color: #fff; }
+.manufacturing-media { background: #24332e; color: #fff; }
+.manufacturing-media .artifact-metrics b { color: #b8d49b; }
+.manufacturing-media .artifact-metrics span { color: #d0ddd4; }
 .artifact-metrics { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 5px 13px; width: 58%; }
 .artifact-metrics b { color: #e7b296; font: 500 25px "IBM Plex Mono", monospace; letter-spacing: -.06em; }
 .artifact-metrics span { color: #c6d0d5; font: 10px "IBM Plex Mono", monospace; }
