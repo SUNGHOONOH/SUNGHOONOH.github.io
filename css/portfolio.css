@@ -62,6 +62,9 @@ h2 { margin-bottom: 40px; font-size: clamp(30px, 4.4vw, 52px); font-weight: 500;
 .product-media { background: #eef2ff; }
 .product-media img { width: 120px; height: 120px; }
 .prompton-media { background: #1d2329; color: #fff; }
+.itda-media { background: #eef0e6; color: var(--ink); }
+.itda-media .artifact-metrics b { color: #58705d; }
+.itda-media .artifact-metrics span { color: #667268; }
 .manufacturing-media { background: #24332e; color: #fff; }
 .manufacturing-media .artifact-metrics b { color: #b8d49b; }
 .manufacturing-media .artifact-metrics span { color: #d0ddd4; }
